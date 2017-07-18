@@ -1,0 +1,30 @@
+{
+  "name": "zenparent",
+  "version": "1.0.0",
+  "description": "Zenparent static theme template",
+  "main": "js/index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js && webpack-dev-server --content-base dist/ --inline --hot --port 8000 --history-api-fallback"
+  },
+  "author": "Varun Hegde",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.5.0",
+    "postcss": "^6.0.6",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

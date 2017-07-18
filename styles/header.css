@@ -1,0 +1,110 @@
+#header {
+  z-index: 2;
+}
+
+.navbar-default{
+	border: none;
+	background-color: #fff;
+	border-radius: none;
+	color : black;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.nav li{
+	float: left;
+}
+
+.nav li a{
+	color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+    
+.nav li.brand-logo img{
+	height: 50px;
+}
+
+.top-menu{
+	width: 100%;
+}
+
+.bottom-menu{
+	margin-left: 90px;
+}
+
+.top-menu .search,.top-menu .menu{
+	margin-top: 10px;
+}
+
+.top-menu .search .glyphicon,.top-menu .menu .glyphicon{
+	font-size: 24px;
+}
+
+
+.top-menu li{
+	text-align : left;
+	padding-left : 0px; 
+	padding-right : 0px; 
+}
+
+.top-menu li a {
+	color: black !important;
+	padding-left : 0px; 
+	padding-right : 0px; 
+
+}
+
+.top-menu .search{
+	text-align : right;
+	padding-right: 0px;
+}
+
+.bottom-menu li a{
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+
+@media screen and (min-width: 767px){
+	.primary-header .container{
+		margin : 0px 50px; 
+	    padding-right: 0px;
+	}
+
+}
+
+/*  For phones */
+@media screen and (max-width: 599px){
+
+	.bottom-menu{
+		display: none;
+	}
+
+	.top-menu li{
+		text-align: center;
+		padding: 0px;
+		margin-top: 0px;
+	}
+
+	.nav li.brand-logo{
+		text-align: center;
+	}
+
+	.nav li.brand-logo img{
+		height: 35px;
+	}
+	
+	.top-menu .search .glyphicon,.top-menu .menu .glyphicon{
+		font-size: 16px;
+	}
+
+	.nav>li>a{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+}
