@@ -1,7 +1,13 @@
 #header {
+  position: fixed;
   z-index: 2;
+  width: 100%;
 }
 
+/* Hide secondary menu on scroll*/
+.header.collapsed .secondary-header{
+	display: none;
+}
 
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 

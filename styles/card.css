@@ -1,12 +1,13 @@
-@media screen and (min-width: 768px){
-	.card-large img{
-		width: 33vw;
-		height: 33vw;
+@media screen and (max-width: 600px){
+	.card .overlay {
+	    /*font-size: 18px;
+	    line-height: 24px;
+	    padding: 10px; */
 	}
 }
 
 .card-large{
-	padding: 0px;
+	padding: 1px;
 }
 
 .card{

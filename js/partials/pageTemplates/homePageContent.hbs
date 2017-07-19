@@ -1,25 +1,40 @@
 <section class="content">
     <div class="row featured-articles-home">
-          {{#each articles}}
+          {{#each slotOne}}
               {{>  cards/cardTemplateLarge }}
           {{/each}}
     </div>
 
     <div style="margin-top: 20px;" class="row">
-      <div class="col-lg-7 col-md-7 col-sm-7">
-       {{#each articles}}
+      <div class="col-lg-8 col-md-8 col-sm-8">
+       {{#each slotTwo}}
               {{>  cards/cardTemplateMedium }}
         {{/each}}
       </div>
-      <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-4 col-md-4 col-sm-4">
-         {{#each articles}}
-              {{>  cards/cardTemplateSmall }}
-        {{/each}}
+    
+        <div class="trending-homepage">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+              <h3> Trending </h3>
+              <span class="trending-icon glyphicon glyphicon-flash"></span>
+             {{#each slotTwo}}
+                  {{>  cards/cardTemplateMedium }}
+            {{/each}}
+          </div>
       </div>
 
     </div>
 
+  
+   <div style="margin-top: 20px;" class="row">
+      
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        {{#each slotThree}}
+              {{>  cards/cardTemplateSmall }}
+        {{/each}}
+      </div>
+   </div>
 
+  
 
 </section>
 

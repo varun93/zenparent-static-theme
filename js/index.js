@@ -41,7 +41,68 @@ function fetchData(argument) {
 function fetchArticles(){
 
 	var articles = {
-		  "articles": [
+
+		"slotOne": [
+		    {
+		      "title" : "Mommies, this is the simplest trick to lose weight!",
+		      "category" : "Parenting",
+		      "image" : "https://res.cloudinary.com/dooujtlec/image/upload/v1500446764/rsz_1mommies-this-is-the-simplest-trick-to-lose-weight-thank-us-later-1-1024x538_ytn2sm.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Wholesome first foods your 6-month-old will love!",
+		      "category" : "Parenting",
+		      "image" : "https://res.cloudinary.com/dooujtlec/image/upload/v1500446972/rsz_4-ways-to-instill-positive-body-image-in-your-daughter-1-1024x538_tlbxnp.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Mums having a C-section – are you prepared for this?",
+		      "category" : "Pregnancy",
+		      "image" : "https://res.cloudinary.com/dooujtlec/image/upload/v1500447035/rsz_from-the-editors-desk-your-kids-can-take-care-of-you-if-you-let-them-1-1024x538_t0xdhj.png",
+		      "permalink" : "#"
+		    }
+		 ],
+
+		  "slotTwo": [
+		    {
+		      "title" : "Mommies, this is the simplest trick to lose weight!",
+		      "category" : "Parenting",
+		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Mommies-this-is-the-simplest-trick-to-lose-weight-Thank-us-later-1-1024x538.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Wholesome first foods your 6-month-old will love!",
+		      "category" : "Parenting",
+		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/4-ways-to-instill-positive-body-image-in-your-daughter-1-1024x538.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Mums having a C-section – are you prepared for this?",
+		      "category" : "Pregnancy",
+		      "image" : "https://cdn4.zenparent.in/wp-content/uploads/2017/06/From-the-Editors-desk-Your-kids-can-take-care-of-you-if-you-let-them-1-1024x538.png",
+		      "permalink" : "#"
+		    }
+		],
+		
+		"slotThree": [
+		  	  {
+		      "title" : "Mommies, this is the simplest trick to lose weight!",
+		      "category" : "Parenting",
+		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Mommies-this-is-the-simplest-trick-to-lose-weight-Thank-us-later-1-1024x538.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Wholesome first foods your 6-month-old will love!",
+		      "category" : "Parenting",
+		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/4-ways-to-instill-positive-body-image-in-your-daughter-1-1024x538.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Mums having a C-section – are you prepared for this?",
+		      "category" : "Pregnancy",
+		      "image" : "https://cdn4.zenparent.in/wp-content/uploads/2017/06/From-the-Editors-desk-Your-kids-can-take-care-of-you-if-you-let-them-1-1024x538.png",
+		      "permalink" : "#"
+		    },
 		    {
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
 		      "category" : "Parenting",
@@ -85,6 +146,21 @@ $(document).ready(function(){
 		searchHeader.toggleClass("hide");
 		$this.toggleClass('glyphicon-search');
 		$this.toggleClass('glyphicon-remove');
+
+	});
+
+	var secondaryHeaderYOffset = $('.secondary-header').offset().top;
+	var header = $('#header');
+	// scroll events
+	$(document).scroll(function(){
+		
+		var scrollTop  = $(window).scrollTop();
+		if(scrollTop > secondaryHeaderYOffset){
+			header.addClass('collapsed');
+		}
+		else{
+			header.removeClass('collapsed');
+		}
 
 	});
 
