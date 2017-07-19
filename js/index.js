@@ -37,9 +37,41 @@ function fetchData(argument) {
 	ourRequest.send();
 };
 
+
+function fetchArticles(){
+
+	var articles = {
+		  "articles": [
+		    {
+		      "title" : "Mommies, this is the simplest trick to lose weight!",
+		      "category" : "Parenting",
+		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Mommies-this-is-the-simplest-trick-to-lose-weight-Thank-us-later-1-1024x538.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Wholesome first foods your 6-month-old will love!",
+		      "category" : "Parenting",
+		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/4-ways-to-instill-positive-body-image-in-your-daughter-1-1024x538.png",
+		      "permalink" : "#"
+		    },
+		    {
+		      "title" : "Mums having a C-section – are you prepared for this?",
+		      "category" : "Pregnancy",
+		      "image" : "https://cdn4.zenparent.in/wp-content/uploads/2017/06/From-the-Editors-desk-Your-kids-can-take-care-of-you-if-you-let-them-1-1024x538.png",
+		      "permalink" : "#"
+		    }
+		]
+	};
+
+	return articles;
+
+
+}
+
 function renderPage(argument) {
 	var body = document.querySelector("body");
-	body.innerHTML = template([]);
+	var articles = fetchArticles();
+	body.innerHTML = template(articles);
 }
 
 $(document).ready(function(){
@@ -48,8 +80,12 @@ $(document).ready(function(){
 
 	// search related
 	var searchHeader = $(".header-search");
-	$(".search").click(function(){
+	$(".search span").click(function(){
+		var $this = $(this); 
 		searchHeader.toggleClass("hide");
+		$this.toggleClass('glyphicon-search');
+		$this.toggleClass('glyphicon-remove');
+
 	});
 
 });

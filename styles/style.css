@@ -6,6 +6,24 @@ body {
   margin: 0;
   border: 0;
   font-size: 100%;
+  font-family: "Playfair Display",serif;
  }
 
 
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+.zp-primary-background{
+  background: #8675A1;  
+}
+
+.zp-primary-color{
+  color: #8675A1;  
+}
+
+.featured-articles-home{
+  margin-right: 0px;
+  margin-left: 3px;
+}
+  

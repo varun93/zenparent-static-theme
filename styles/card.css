@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px){
+	.card-large img{
+		width: 33vw;
+		height: 33vw;
+	}
+}
+
+.card-large{
+	padding: 0px;
+}
+
+.card{
+	margin-bottom : 20px;
+}
+
+.category-label{
+	text-align: center;
+	color :black;
+	text-transform: uppercase;
+}
+
+.category-label > div{
+	display: block;
+	text-align: center;
+	margin-top: -27px;
+	font-size: 20px;
+}
+
+.category-label > div > span{
+	border-top: 2px solid #8675A1;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.card .overlay{
+	display: block;
+    position: relative;
+    background: white;
+    padding: 10px;
+    margin: -40px auto 20px;
+    color: #080a0b;
+    text-align: center;
+    border: 1px solid #CCC;
+	font-family: "Playfair Display",serif;
+    width: 88%;
+    min-height: 95px;
+    font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.card-medium .overlay{
+    font-size: 26px;
+    line-height: 33px;
+    padding: 18px 50px;
+}
