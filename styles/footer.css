@@ -1,7 +1,35 @@
-#footer{
+footer{
 	text-align: center;
     padding-top: 20px;
     padding-bottom: 50px;
     background: #F0F0F0;
     z-index: 100;	
+    font-size: 16px;
+}
+
+footer .social-links ul li,footer .info-links ul li{
+	list-style : none;
+	display: inline-block; 
+}
+
+footer .social-links ul li a,footer .info-links ul li a,footer .copyright{
+	text-transform: uppercase;
+	margin-right: 30px;
+	color: #696969;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+footer div.social-links {
+    overflow: hidden;
+}
+
+footer div.info-links {
+    margin-top: 10px;
+}
+
+footer div.info-links p a {
+    margin: 20px;
+    font-size: 15px;
+    color: #aaa;
 }
