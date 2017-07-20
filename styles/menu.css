@@ -1,4 +1,4 @@
-#menu .modal {
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -6,115 +6,53 @@
   left: 0;
   overflow: hidden;
 }
-
-#menu .modal-dialog {
+.modal-dialog {
   position: fixed;
   margin: 0;
   width: 100%;
   height: 100%;
   padding: 0;
 }
-
-#menu .modal-content {
+.modal-content {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  border: 2px solid #3c7dcf;
   border-radius: 0;
   box-shadow: none;
 }
-
-#menu .modal-header {
-  text-align:center;
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 50px;
+  padding: 10px;
+  background: #6598d9;
   border: 0;
 }
-
-#menu .modal-header .logo-zenparent{
-  height: 40px;
-}
-
-#menu .glyphicon-remove{
-  position : absolute;
-  right : 10px;
-  top : 20px;
-  font-size: 18px;
-}
-
-#menu .modal-title {
-  font-weight: bold;
-  font-size: 16px;
-  color: #000;
+.modal-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
   line-height: 30px;
 }
-
-#menu .modal-body {
+.modal-body {
   position: absolute;
   top: 50px;
   bottom: 60px;
   width: 100%;
+  font-weight: 300;
   overflow: auto;
-  text-transform : uppercase;
 }
-
-#menu .modal-footer {
+.modal-footer {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  text-transform: uppercase;
+  height: 60px;
   padding: 10px;
-  border : none;
-  text-align: center;
+  background: #f1f3f5;
 }
-
-#menu ul{
-  text-align:center;
-}
-
-#menu ul li{
-  list-style:none;
-  line-height: 43px;
-}
-#menu ul li a{
-  text-decoration:none;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#menu .blog-links-menu li a{
-
-   font-size: 20px;
-    color : #000;
-}
-
-#menu .featured-list-menu li{
-    line-height: normal;
-    margin-bottom: 19px;
-    font-size: 14px;
-}
-
-#menu .featured-list-menu li a{
-  color: #666;
-  font-size: 16px;
-}
-
-
-#menu .modal-footer li{
-    line-height: normal;
-    margin-bottom: 19px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #666;
-}
-
-#menu .modal-footer li a{
-   color: #666;
-}
-  
-
-
-
-

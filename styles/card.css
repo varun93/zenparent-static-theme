@@ -1,15 +1,3 @@
-@media screen and (max-width: 600px){
-	.card .overlay {
-	    /*font-size: 18px;
-	    line-height: 24px;
-	    padding: 10px; */
-	}
-}
-
-.card-large{
-	padding: 1px;
-}
-
 .card{
 	margin-bottom : 20px;
 }
@@ -33,6 +21,7 @@
 	font-weight: bold;
 }
 
+
 .card .overlay{
 	display: block;
     position: relative;
@@ -43,15 +32,24 @@
     text-align: center;
     border: 1px solid #CCC;
 	font-family: "Playfair Display",serif;
-    width: 88%;
-    min-height: 95px;
+    width: 260px;
     font-weight: bold;
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 18px;
+	line-height: 24px;
 }
 
-.card-medium .overlay{
-    font-size: 26px;
-    line-height: 33px;
-    padding: 18px 50px;
+
+@media screen and (min-width: 759px){
+	.card .overlay{
+		min-height: 95px;
+    	width : 88%;
+	}
 }
+
+@media screen and (min-width: 1280px){
+ .card .overlay{
+ 	font-size:24px;
+	line-height:30px;
+ }	
+}
+	

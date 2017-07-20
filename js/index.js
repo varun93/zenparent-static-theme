@@ -1,11 +1,12 @@
 // all style sheets
 require('bootstrap/dist/css/bootstrap.min.css');
-require('../styles/card.css');
 require('../styles/style.css');
 require('../styles/header.css');
-require('../styles/menu.css');
 require('../styles/search.css');
+require('../styles/menu.css');
+require('../styles/card.css');
 require('../styles/footer.css');
+
 var $ = require('jquery');
 global.jQuery = $; 
 require('bootstrap/dist/js/bootstrap.min.js');
