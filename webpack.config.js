@@ -1,18 +1,21 @@
 const path = require("path");
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer'); 
-var mainPath = path.resolve(__dirname, 'js','index');
+var homepage = path.resolve(__dirname, 'js','homepage');
+var category = path.resolve(__dirname, 'js','category');
+var single = path.resolve(__dirname, 'js','single');
+
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-
 module.exports = {
-   entry: [
-        'webpack/hot/only-dev-server',
-         mainPath
-    ],
+   entry: {
+        homepage : homepage,
+        category : category,
+        single : single
+    },
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "bundle.js"
+    filename: "[name].js"
   },
   resolve: {
         root: [path.resolve(__dirname, 'js'),path.resolve(__dirname, 'node_modules')],
@@ -40,7 +43,7 @@ module.exports = {
             }, 
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader","postcss")
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader")
             }
         ]
     },

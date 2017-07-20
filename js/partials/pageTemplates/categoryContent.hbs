@@ -1,0 +1,45 @@
+<section class="content">
+      <!-- Row One -->
+      <div class="row featured-articles-home">
+           {{#each slotOne}}
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  {{>  cards/cardTemplate }}
+              </div>
+            {{/each}}
+      </div>
+
+     <!-- Row 2,3,4  -->
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            
+            <!-- 2 x 2 -->
+            {{#each slotTwo}}
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  {{>  cards/cardTemplate }}
+                </div>
+              {{/each}}
+            
+            <!-- end of 2 x 2 -->
+            
+            <!-- 1 X 1 Big Image  -->
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              {{#each editorial}}
+                  {{>  cards/cardTemplate }}
+              {{/each}}
+              
+            </div>
+            <!-- end of 1 x 1 Big Image -->
+          </div>
+        
+          <div class="trending-homepage">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-2">
+                <h3> Trending </h3>
+                <span class="trending-icon glyphicon glyphicon-flash"></span>
+                 {{#each slotThree}}
+                  {{>  cards/cardTemplateSmall }}
+              {{/each}}
+            </div>
+        </div>
+    
+
+</section>
+<div class="clearfix"></div>

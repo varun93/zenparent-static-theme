@@ -38,6 +38,7 @@
 	line-height: 24px;
 }
 
+
 @media screen and (max-width: 600px){
 	.card .overlay{
     	width : 80%;
@@ -57,4 +58,25 @@
 	line-height:30px;
  }	
 }
-	
+
+/*Card small*/
+.card-small{
+	padding: 0px; 
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #D9D9D8;
+}
+
+.card-small-img{
+	padding-left: 0px;	
+}
+
+.card-small-title{
+	padding: 0px;	
+}
+
+.card-small-title span{
+	font-size: 18px;
+	line-height: 16px;
+	font-weight: bold;
+}
