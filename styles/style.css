@@ -15,7 +15,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 section.content{
-  padding-top: 155px;
+  padding-top: 130px;
 }
 
 @media screen and (max-width: 600px){

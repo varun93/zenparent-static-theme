@@ -3,3 +3,8 @@
 .featured-articles-home{
   margin: 0px -10px;
 }
+
+.featured-articles-home > div{
+  padding-left: 0px;
+  padding-right: 0px;
+}
