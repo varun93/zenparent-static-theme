@@ -32,7 +32,7 @@
 }
 
 #menu .modal-header .logo-zenparent{
-  height: 40px;
+  height: 35px;
 }
 
 #menu .glyphicon-remove{
@@ -110,6 +110,8 @@
 
 #menu .modal-footer{
   width: 100%;
+  padding: 0px;
+  z-index: 20;
   text-align: center;
 }
 
