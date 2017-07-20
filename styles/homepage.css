@@ -1,10 +1,11 @@
 /* Homepage styles */
 
 .featured-articles-home{
-  margin: 0px -10px;
+    padding-left: 20px;
+    padding-right: 15px;
 }
 
 .featured-articles-home > div{
   padding-left: 0px;
-  padding-right: 0px;
+  padding-right: 5px;
 }

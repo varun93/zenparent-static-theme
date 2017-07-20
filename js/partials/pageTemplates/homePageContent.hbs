@@ -15,16 +15,19 @@
                 {{>  cards/cardTemplate }}
             {{/each}}
           </div>
-        
-          <div class="trending-homepage">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-2">
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-2">
+              <div class="trending-homepage">
                 <h3> Trending </h3>
-                <span class="trending-icon glyphicon glyphicon-flash"></span>
-               {{#each slotTwo}}
-                    {{>  cards/cardTemplate }}
-              {{/each}}
-            </div>
-        </div>
+                  <span class="trending-icon glyphicon glyphicon-flash"></span>
+                 {{#each slotTwo}}
+                      {{>  cards/cardTemplate }}
+                {{/each}}
+              </div>
+
+              {{> widgets/sampleWidgetTwo }}
+
+          </div>
       </div>
 
     

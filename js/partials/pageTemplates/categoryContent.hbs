@@ -29,16 +29,22 @@
             </div>
             <!-- end of 1 x 1 Big Image -->
           </div>
-        
-          <div class="trending-homepage">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-2">
-                <h3> Trending </h3>
-                <span class="trending-icon glyphicon glyphicon-flash"></span>
-                 {{#each slotThree}}
-                  {{>  cards/cardTemplateSmall }}
-              {{/each}}
-            </div>
-        </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-2">
+
+              {{> widgets/sampleWidgetOne }}
+
+                <div class="trending-homepage">
+                    <h3> Trending </h3>
+                    <span class="trending-icon glyphicon glyphicon-flash"></span>
+                     {{#each slotThree}}
+                      {{>  cards/cardTemplateSmall }}
+                  {{/each}}
+                </div>
+             
+             {{> widgets/sampleWidgetTwo }}
+
+         </div>
     
 
 </section>
