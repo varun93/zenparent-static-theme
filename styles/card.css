@@ -22,7 +22,7 @@
 }
 
 
-.card .overlay{
+.card .overlay,.card-category .overlay{
 	display: block;
     position: relative;
     background: white;
@@ -59,7 +59,7 @@
  }	
 }
 
-/*Card small*/
+/*Card small used in trending widget*/
 .card-small{
 	padding: 0px; 
 	margin-bottom: 15px;
@@ -79,4 +79,55 @@
 	font-size: 18px;
 	line-height: 16px;
 	font-weight: bold;
+}
+
+/*  Card category overlay  */
+
+.card-category .category-label > div{
+	margin-top: -16px;
+}
+
+.card-category .category-label{
+	margin-bottom: 10px;
+}
+
+.card-category .post-time {
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+	color: #BDBDBD;
+}
+
+
+.card-category .title {
+    display: block;
+    position: relative;
+    padding: 0 10px;
+    font-size: 1.125em;
+    color: #000;
+    font-weight: bold;
+    font-family: "Playfair Display",serif;
+    line-height: 23px;
+}
+
+
+@media screen and (min-width: 1025px){
+
+	.card-category .overlay{
+		width: 88%;
+	}
+
+	.card-category .category-label{
+		font-size: 15px;
+	}
+	
+	.card-category .post-time{
+		font-size: 14px;
+	}
+	
+	.card-category .title {
+	    font-size: 22px;
+	    line-height: 30px;
+	    margin-bottom: 10px;
+	}
+
 }
