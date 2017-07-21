@@ -1,7 +1,7 @@
 footer{
 	text-align: center;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     background: #F0F0F0;
     z-index: 100;	
     font-size: 16px;
@@ -10,11 +10,11 @@ footer{
 footer .social-links ul li,footer .info-links ul li{
 	list-style : none;
 	display: inline-block; 
+	margin-right: 30px;
 }
 
 footer .social-links ul li a,footer .info-links ul li a,footer .copyright{
 	text-transform: uppercase;
-	margin-right: 30px;
 	color: #696969;
     font-weight: normal;
     font-family: sans-serif;
@@ -28,8 +28,14 @@ footer div.info-links {
     margin-top: 10px;
 }
 
-footer div.info-links p a {
-    margin: 20px;
-    font-size: 15px;
-    color: #aaa;
+@media screen and (max-width: 600px){
+	footer{
+		font-size: 12px;
+	}
+	footer ul{
+		padding: 0px;
+	}
+	footer .social-links ul li,footer .info-links ul li{
+		margin-right: 20px;
+	}
 }
