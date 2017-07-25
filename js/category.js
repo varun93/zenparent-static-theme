@@ -25,19 +25,19 @@ function fetchArticles(){
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
 		      "category" : "Parenting",
 		      "image" : "http://lorempixel.com/650/650/people/5",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
 		      "category" : "Parenting",
 		      "image" : "http://lorempixel.com/700/700/people/2",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Mums having a C-section – are you prepared for this?",
 		      "category" : "Pregnancy",
 		      "image" : "http://lorempixel.com/600/600/people/7",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    }
 		 ],
 		"slotTwo": [
@@ -45,25 +45,25 @@ function fetchArticles(){
 		      "title" : "Mums having a C-section – are you prepared for this?",
 		      "category" : "Pregnancy",
 		      "image" : "https://cdn4.zenparent.in/wp-content/uploads/2017/06/From-the-Editors-desk-Your-kids-can-take-care-of-you-if-you-let-them-1-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    },
 		     {
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
 		      "category" : "Parenting",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/7-ways-to-JUMPSTART-your-natural-weight-loss-post-delivery-1-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
 		      "category" : "Parenting",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/Can-you-tell-if-your-child-is-gay-2-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Mums having a C-section – are you prepared for this?",
 		      "category" : "Pregnancy",
 		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Why-do-I-HATE-breastfeeding-1-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    }
 		],
 		"editorial" : [	
@@ -71,7 +71,7 @@ function fetchArticles(){
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
 		      "category" : "Parenting",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/7-ways-to-JUMPSTART-your-natural-weight-loss-post-delivery-1-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    }
 		],
 		"slotThree": [
@@ -79,19 +79,19 @@ function fetchArticles(){
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
 		      "category" : "Parenting",
 		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Mommies-this-is-the-simplest-trick-to-lose-weight-Thank-us-later-1-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
 		      "category" : "Parenting",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/4-ways-to-instill-positive-body-image-in-your-daughter-1-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Mums having a C-section – are you prepared for this?",
 		      "category" : "Pregnancy",
 		      "image" : "https://cdn4.zenparent.in/wp-content/uploads/2017/06/From-the-Editors-desk-Your-kids-can-take-care-of-you-if-you-let-them-1-1024x538.png",
-		      "permalink" : "#"
+		      "permalink" : "/single.html"
 		    }
 		],
 		"menu" :  [{
