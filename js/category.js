@@ -5,6 +5,7 @@ require('../styles/header.css');
 require('../styles/search.css');
 require('../styles/menu.css');
 require('../styles/card.css');
+require('../styles/widgets.css');
 require('../styles/homepage.css');
 require('../styles/category.css');
 require('../styles/footer.css');
@@ -92,7 +93,36 @@ function fetchArticles(){
 		      "image" : "https://cdn4.zenparent.in/wp-content/uploads/2017/06/From-the-Editors-desk-Your-kids-can-take-care-of-you-if-you-let-them-1-1024x538.png",
 		      "permalink" : "#"
 		    }
-		]
+		],
+		"menu" :  [{
+				'label' : 'Trying',
+				'permalink' : '#'
+				},
+				{
+				'label' : 'Pregnant',
+				'permalink' : '#'
+				},
+				{
+				'label' : 'Babies',
+				'permalink' : '#'
+				},
+				{
+				'label' : 'Toddlers',
+				'permalink' : '#'
+				},
+				{
+				'label' : 'Big Kids',
+				'permalink' : '#'
+				},
+				{
+				'label' : 'Baby Names',
+				'permalink' : '#'
+				},
+				{
+				'label' : 'Tools',
+				'permalink' : '#'
+				}
+			]
 	};
 
 	return articles;

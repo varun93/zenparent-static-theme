@@ -1,0 +1,41 @@
+h1.post-title, h2.post-title{
+    font-family: "Playfair Display",serif;
+    font-weight: bold;
+    text-transform: none;
+    line-height: 1.4em;
+    border-left: 0;
+    padding-left: 0;
+    color: #000;
+}
+
+.post-body {
+    position: relative;
+    font: normal 14px "Open Sans",sans-serif;
+    line-height: 25px;
+    color: #000;
+}
+
+.related-posts h4{
+	font-weight: bold;
+}
+
+.related-posts h4::after{
+	width: 72%;
+	border-width: 4px;
+}
+
+@media screen and (min-width: 1025px){
+	h1.post-title, h2.post-title{
+	    font-size: 42px;
+	    margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 1025px){
+	.post-body {
+	    font-size: 18px;
+	    line-height: 30px;
+	}
+}
+
+

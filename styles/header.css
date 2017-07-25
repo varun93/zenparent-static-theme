@@ -28,23 +28,20 @@
 	margin-bottom: 0px;
 }
 
-.nav li{
-	float: left;
-}
-
-.nav li a{
+.nav .menu-item a{
 	color: #666;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
     
-.nav li.brand-logo img{
+.nav .brand-logo img{
 	height: 50px;
 }
 
 .top-menu{
 	width: 100%;
+	padding: 10px 0px;
 }
 
 .bottom-menu{
@@ -59,26 +56,19 @@
 	font-size: 24px;
 }
 
-
-.top-menu li{
-	text-align : left;
-	padding-left : 0px; 
-	padding-right : 0px; 
+li.menu-item{
+	float: left;
 }
 
-.top-menu li a {
-	color: black !important;
-	padding-left : 0px; 
-	padding-right : 0px; 
-
+.top-menu .menu-item a {
+	color: black;
 }
 
 .top-menu .search{
 	text-align : right;
-	padding-right: 0px;
 }
 
-.bottom-menu li a{
+.bottom-menu .menu-item a{
 	text-transform: uppercase;
 	font-size: 15px;
 }
@@ -99,25 +89,38 @@
 		display: none;
 	}
 
-	.top-menu li{
-		text-align: center;
+	/*.top-menu{
+		margin: 0px;
+	}
+
+	.primary-header .container{
+		padding: 0px; 
+	}*/
+	
+	.top-menu .menu-item{
+		text-align: right;
 		padding: 0px;
 		margin-top: 0px;
 	}
 
-	.nav li.brand-logo{
+	.top-menu .search,.top-menu .menu{
+		padding-top: 8px;
+	}
+
+	.nav .brand-logo{
 		text-align: center;
 	}
 
-	.nav li.brand-logo img{
+	.nav .brand-logo img{
 		height: 35px;
+		margin: auto; 
 	}
 	
 	.top-menu .search .glyphicon,.top-menu .menu .glyphicon{
 		font-size: 16px;
 	}
 
-	.nav>li>a{
+	.nav>.menu-item>a{
 		padding-right: 0px;
 		padding-left: 0px;
 	}

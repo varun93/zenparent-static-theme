@@ -9,10 +9,10 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
    entry: {
-        homepage : ['webpack/hot/only-dev-server',homepage],
-        category : ['webpack/hot/only-dev-server',category],
-        single : ['webpack/hot/only-dev-server',single]
-  },
+        homepage : homepage,
+        category : category,
+        single : single
+    },
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "[name].js"

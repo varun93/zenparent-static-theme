@@ -1,3 +1,61 @@
-<div class="container"> 
-	SinglePage
-</div>
+<section style="padding-left: 20px; padding-right: 20px;" class="content single">
+	<div class="container-fluid">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+			<div class="row">
+			 <h1 class="post-title">	
+			 	{{article.title}}
+			 </h1>
+			</div>
+			<div class="row">
+				<img class="img-responsive" src="{{article.image}}">
+			</div>
+			<div class="row">
+				<div class="post-body">
+					{{{article.content}}}
+				</div>
+			</div>
+		
+		<!-- After the article -->
+	
+			{{#slice related 2 5}}
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					{{> cards/cardTemplate }}
+				</div>
+			{{/slice}}
+
+			<!-- Widget -->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		        {{#slotWidgetMapper 'slot_3'}}
+		            {{> widgets/widgetGeneric}}
+		        {{/slotWidgetMapper }}
+	        </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<aside>
+				<div class="related-posts">
+					<h4>RELATED</h4>
+					{{#slice related 0 2}}
+						{{> cardTemplate }}
+					{{/slice}}
+				</div>
+				
+				<!-- Widget -->
+	              {{#slotWidgetMapper 'slot_2'}}
+	                {{> widgets/widgetGeneric}}
+	              {{/slotWidgetMapper }}
+              	<!-- Widget -->
+				<!-- Trending Widget -->
+				{{> widgets/trending trending=trending }}
+				<!-- Trending Widget -->
+				<!-- Widget -->
+	              {{#slotWidgetMapper 'slot_4'}}
+	                {{> widgets/widgetGeneric}}
+	              {{/slotWidgetMapper }}
+              	<!-- Widget -->
+
+			</aside>
+		</div>
+		
+	</div>
+</section>

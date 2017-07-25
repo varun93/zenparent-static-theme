@@ -1,54 +1,70 @@
 <section class="content">
+      <!-- Mobile Menu -->
+      <div class="col-xs-12 visible-xs">
+          {{>  header/menuCategory menu=menu}}
+      </div>
+      
       <!-- Row One -->
       <div class="row featured-articles-home">
-           {{#each slotOne}}
+           {{#slice slotOne 0 3}}
               <div class="col-lg-4 col-md-4 col-sm-4">
                   {{>  cards/cardTemplate }}
               </div>
-            {{/each}}
+            {{/slice}}
       </div>
 
-     <!-- Row 2,3,4  -->
+       <!-- Row 2,3,4  -->
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-1">
             
             <!-- 2 x 2 -->
-            {{#each slotTwo}}
+              {{#slice slotTwo 0 2}}
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   {{>  cards/cardTemplateCategory }}
                 </div>
-              {{/each}}
-            
+              {{/slice}}
+              
+                <div class="col-lg-6 col-md-6 col-sm-6 visible-lg visible-md visible-sm">
+                  {{>  header/menuCategory menu=menu}}
+                </div>
+
+               {{#slice slotTwo 3 4}}
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  {{>  cards/cardTemplateCategory }}
+                </div>
+              {{/slice}}
+              
             <!-- end of 2 x 2 -->
             
-            <!-- 1 X 1 Big Image  -->
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              {{#each editorial}}
-                  {{>  cards/cardTemplateCategory }}
-              {{/each}}
-              
-            </div>
+              <!-- 1 X 1 Big Image  -->
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                {{#each editorial}}
+                    {{> cards/cardTemplateCategory }}
+                {{/each}}
+              </div>
+            
             <!-- end of 1 x 1 Big Image -->
           </div>
           
           <!-- Sidebar Content -->
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-1">
+          <aside>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-1">
+                    <!-- Widget for Slot One -->
+                    {{#slotWidgetMapper 'slot_3'}}
+                      {{> widgets/widgetGeneric}}
+                    {{/slotWidgetMapper }}
+                    <!-- Widget For Slot Two -->
+                    {{> widgets/trending  trending=slotTwo}}
+                    <!-- Widget for Slot Four -->
+                    {{#slotWidgetMapper 'slot_4'}}
+                      {{> widgets/widgetGeneric}}
+                    {{/slotWidgetMapper }}
+                    <!-- Widget For Slot Two -->
+               </div>
+          </aside>
+         <!-- End of Sidebar -->
 
-              {{> widgets/sampleWidgetOne }}
 
-                <div class="trending-homepage">
-                    <h3> Trending </h3>
-                    <span class="trending-icon glyphicon glyphicon-flash"></span>
-                     {{#each slotThree}}
-                      {{>  cards/cardTemplateSmall }}
-                  {{/each}}
-                </div>
-             
-             {{> widgets/sampleWidgetTwo }}
-
-         </div>
-
-
-              <!-- Row 2,3,4  -->
+        <!-- Row 2,3,4  -->
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-1">
             
              <!-- 2 x 2 -->
@@ -70,7 +86,5 @@
             <!-- end of 2 x 2 -->
         </div>
           
-    
-
 </section>
 <div class="clearfix"></div>

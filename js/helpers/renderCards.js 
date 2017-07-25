@@ -1,0 +1,3 @@
+module.exports = function(cards,wigetId,slotNo) {
+	return cardTemplates.slice(0,slotNo) + templateOf(widgetId) + cardTemplates.slice(slotNo);
+};

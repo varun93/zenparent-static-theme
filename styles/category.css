@@ -1,0 +1,24 @@
+.subcategory-menu{
+	text-align: center;
+}
+
+.subcategory-menu li{
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	font-size: 18px;
+    text-transform: uppercase;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+.subcategory-menu li a{
+	color: black;
+}
+
+.list-header{
+	text-align: center;
+	color: #fff;
+	font-size: 19px;
+} 
+

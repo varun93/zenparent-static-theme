@@ -24,9 +24,13 @@
                       {{>  cards/cardTemplate }}
                 {{/each}}
               </div>
-
-              {{> widgets/sampleWidgetTwo }}
-
+              
+              <!-- Widget for Slot One -->
+              {{#slotWidgetMapper 'slot_1'}}
+                {{> widgets/widgetGeneric}}
+              {{/slotWidgetMapper }}
+              <!-- Widget For Slot Two -->
+        
           </div>
       </div>
 

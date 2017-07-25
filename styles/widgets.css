@@ -1,0 +1,54 @@
+.widget{
+   margin-bottom: 25px;
+   padding : 15px;
+   border-radius: 5px;
+}
+
+.widget.pink{
+   background: #FF547C;
+}
+
+.widget.blue{
+   background: #009FA0;
+}
+
+.widget.orange{
+   background: #EF8A3F;
+}
+
+.widget.green{
+   background: #86AB6F;
+}
+
+.widget.purple{
+   background: #8675A1;
+}
+
+.widget .widget-icon img{
+   width: 100px;
+   height: 100px;
+}
+
+.widget .widget-info{
+   text-align: center;
+   display: block;
+   color: white;
+   font-size: 16px;
+}
+
+.widget .widget-info .title{
+   font-weight: bold;
+   line-height: 24px;
+}
+
+.widget .widget-info .description{
+   margin-bottom: 15px;
+}
+
+.widget .widget-info .call-to-action{
+   border-radius: 25px;
+   background: transparent;
+   padding: 10px; 
+   color : white;
+   border : 1px solid white;
+}

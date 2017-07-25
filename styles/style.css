@@ -42,7 +42,7 @@ section.content{
     text-transform: uppercase;
 }
 
-.trending-homepage h3:after{
+.trending-homepage h3:after,.related-posts h4::after{
   content: '';
   display: inline-block;
   margin-bottom: 5px;

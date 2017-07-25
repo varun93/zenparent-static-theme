@@ -5,6 +5,7 @@ require('../styles/header.css');
 require('../styles/search.css');
 require('../styles/menu.css');
 require('../styles/card.css');
+require('../styles/widgets.css');
 require('../styles/homepage.css');
 require('../styles/footer.css');
 
