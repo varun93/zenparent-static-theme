@@ -1,10 +1,11 @@
 <section class="content myspace">
 	<div class="container-fluid">
+		<div class="row">
 		<!-- Main Content -->
 		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 			
-			<div class="col-xs-12 lifestage-selector">	
-
+			<!-- Lifestyle Selector -->
+			<div class="col-xs-12 col-md-12 col-lg-12 col-sm-12 lifestage-selector">	
 				<div class="row">
 						<div class="lifestage-wrapper col-lg-offset-1 col-lg-3 col-md-4 col-sm-4 col-xs-12  col-xs-4">
 							<div class="lifestage-image">
@@ -34,11 +35,56 @@
 						</div>
 				</div>
 			</div>
+			<!-- End of lifestage selector -->
 
-	
+			<!-- Select Wrapper -->
+			<div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+				<div class="row">
+						<!-- Wrapper  -->
+						<div class="form-inline select-wrapper">
+              				<div class="form-group">
+				                	<label for="born-date">Was born on</label>
+						            <!--  -->
+					                <select class="form-control" id="born-date" name="born_day" required="">
+					  					<option value="">dd</option>
+					                    <option value="1">1</option>
+					                    <option value="2">2</option>
+									</select>
+					                <!-- Month -->
+					                <select class="form-control" id="born-month" name="born_month" required="">
+					                   <option value="">mm</option>
+						                <option value="1">January</option>
+						                <option value="2">February</option>
+						                <option value="3">March</option>
+									</select>
+
+					                <select class="form-control" id="born-year" name="born_year" required="">
+					                  <option value="">year</option>
+					                  <option value="2017">2017</option>
+					                </select>
+				              </div>
+            			</div>
+            			<!-- End of wrapper -->
+				</div>
+			</div>
+			<!-- End of Select Wrapper -->
+			
+			<!-- User Feed -->
+			<div class="user-feed col-xs-12 col-md-12 col-lg-12 col-sm-12">
+				<div class="row">
+				{{#each feed}}
+					<div class="col-xs-12 col-md-6 col-lg-6 col-sm-6">
+						{{> cards/cardTemplate }}
+					</div>
+				{{/each}}
+				</div>
+			</div>
+
+			<!-- End of user feed -->
 		</div>
 		<!-- End of Main Content -->
 		
+		<!-- SideContent -->
 		<aside>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				
@@ -63,9 +109,11 @@
 		              {{/slotWidgetMapper }}
 	              	<!-- Widget -->
 
-			</div>
-		</aside>
-
-		
+				</div>
+			</aside>
+			<!-- Sidebar -->
+		</div>
+		<!-- End of row -->
 	</div>
+	<!-- End of Container -->
 </section>

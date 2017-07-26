@@ -71,7 +71,6 @@ const slotsWidgetMapping = {
 
 
 module.exports = function(slot,options) {
-	console.log(slot);
 	slot = widgets[slotsWidgetMapping[slot]];	
 	return options.fn(slot);
 };

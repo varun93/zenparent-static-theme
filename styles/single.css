@@ -33,26 +33,6 @@ h1.post-title, h2.post-title{
     color: #CFCECE;
 }
 
-@media screen and (min-width: 1025px){
-
-	.info-bar .info .top {
-	    border-top: 3px solid #E6E6E5;
-	    padding-top: 5px;
-	}
-	
-	.info-bar .info .top, .info-bar .info .bottom {
-    	font-size: 18px;
-	}
-
-	.info-bar .info .top .name {
-    	margin-bottom: 3px;
-	}
-
-	.info-bar .info .bottom .subtopic {
-	    border-top-width: 2px;
-	}
-}
- 
 .info-bar .info .top .name {
     float: left;
     text-transform: uppercase;
@@ -71,8 +51,6 @@ h1.post-title, h2.post-title{
     font-size: 14px;
     text-transform: uppercase;
 }
-
-
 
 /* Post Body */
 .post-body {
@@ -114,6 +92,24 @@ h1.post-title, h2.post-title{
 	.post-body {
 	    font-size: 18px;
 	    line-height: 30px;
+	}
+	
+	/* Info Bar */
+	.info-bar .info .top {
+	    border-top: 3px solid #E6E6E5;
+	    padding-top: 5px;
+	}
+	
+	.info-bar .info .top, .info-bar .info .bottom {
+    	font-size: 18px;
+	}
+
+	.info-bar .info .top .name {
+    	margin-bottom: 3px;
+	}
+
+	.info-bar .info .bottom .subtopic {
+	    border-top-width: 2px;
 	}
 
 

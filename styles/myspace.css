@@ -22,6 +22,49 @@
     height: 180px;
 }
 
+/* Select Wrapper */
+.select-wrapper{
+    text-align: center;
+}
+
+.select-wrapper label {
+    color: #9b9b9b;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.select-wrapper select {
+    border: 1px solid #efedee;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #4a4a4a;
+    font-size: 13px;
+    width: 78px;
+    height: 30px;
+    margin: 0 4px;
+    padding: 4px 8px;
+}
+
+.select-wrapper select.form-control {
+    -webkit-appearance: menulist;
+}
+
+.user-feed{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 767px){
+    
+    .select-wrapper select {
+        display: inline-block;
+        padding: 4px;
+        font-size: 12px;
+        width: 55px;
+        margin: 0 1px;
+    }
+
+}
+
 @media screen and (max-width: 400px){
 
     .lifestage-image img{
