@@ -1,3 +1,4 @@
+/* Post title */
 h1.post-title, h2.post-title{
     font-family: "Playfair Display",serif;
     font-weight: bold;
@@ -8,13 +9,81 @@ h1.post-title, h2.post-title{
     color: #000;
 }
 
+.info-bar{
+	display: table;
+	margin-bottom: 20px;
+}
+.info-bar .author, .info-bar .info{
+	display: table-cell;
+}
+.info-bar .author img{
+	height: 50px;
+	width: 50px;
+}
+.info-bar .info{
+	vertical-align: top;
+	padding-left: 15px;
+	width: 100%;
+}
+
+/*  Info top row */
+.info-bar .info .top, .info-bar .info .bottom {
+    overflow: hidden;
+    font-size: 9px;
+    color: #CFCECE;
+}
+
+@media screen and (min-width: 1025px){
+
+	.info-bar .info .top {
+	    border-top: 3px solid #E6E6E5;
+	    padding-top: 5px;
+	}
+	
+	.info-bar .info .top, .info-bar .info .bottom {
+    	font-size: 18px;
+	}
+
+	.info-bar .info .top .name {
+    	margin-bottom: 3px;
+	}
+
+	.info-bar .info .bottom .subtopic {
+	    border-top-width: 2px;
+	}
+}
+ 
+.info-bar .info .top .name {
+    float: left;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 5px;
+}
+
+.info-bar .info .bottom .subtopic {
+    font-family: "Open Sans",sans-serif;
+    color: #05B6BD;
+    border-top: 1px solid #05B6BD;
+    display: inline-block;
+}
+
+.info-bar .info .top .subtopic, .info-bar .info .bottom .subtopic {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+
+/* Post Body */
 .post-body {
     position: relative;
-    font: normal 14px "Open Sans",sans-serif;
-    line-height: 25px;
+    font: normal 16px "Open Sans",sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.02em;
     color: #000;
 }
 
+/* Related Posts */
 .related-posts h4{
 	font-weight: bold;
 }
@@ -24,12 +93,14 @@ h1.post-title, h2.post-title{
 	border-width: 4px;
 }
 
+/* Card Design Overide */
 .single .card .overlay{
 	font-size: 18px;
 	line-height: 24px;
 	width: 90%;
 	min-height: 65px;
 }
+
 .single .card .category-label{
 	display: none;
 }
@@ -39,13 +110,12 @@ h1.post-title, h2.post-title{
 	    font-size: 42px;
 	    margin-bottom: 20px;
 	}
-}
-
-@media screen and (min-width: 1025px){
+	
 	.post-body {
 	    font-size: 18px;
 	    line-height: 30px;
 	}
-}
 
+
+}
 

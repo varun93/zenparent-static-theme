@@ -4,6 +4,7 @@ var autoprefixer = require('autoprefixer');
 var homepage = path.resolve(__dirname, 'js','homepage');
 var category = path.resolve(__dirname, 'js','category');
 var single = path.resolve(__dirname, 'js','single');
+var myspace = path.resolve(__dirname, 'js','myspace');
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -11,7 +12,8 @@ module.exports = {
    entry: {
         homepage : homepage,
         category : category,
-        single : single
+        single : single,
+        myspace : myspace
     },
   output: {
     path: path.resolve(__dirname, "./dist"),

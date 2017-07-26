@@ -2,20 +2,32 @@
 	<div class="container-fluid">
 		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 			<div class="row">
-			 <h1 class="post-title">	
-			 	{{article.title}}
-			 </h1>
+				<h1 class="post-title">	
+				 	{{article.title}}
+				 </h1>
 			</div>
+			
+			<!-- Info bar -->
+			<div class="row">
+				{{>  single/articleInfo }}	
+			</div>
+			<!-- End of info bar -->
+
+			<div class="row">
+				{{> single/share }}
+			</div>
+
 			<div class="row">
 				<img class="img-responsive" src="{{article.image}}">
 			</div>
+			
 			<div class="row">
 				<div class="post-body">
 					{{{article.content}}}
 				</div>
 			</div>
 		
-		<!-- After the article -->
+			<!-- After the article -->
 			<div class="row">
 				{{#slice related 2 5}}
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -30,8 +42,7 @@
 			        {{/slotWidgetMapper }}
 		        </div>
 	        </div>
-
-        </div>
+		</div>
 		
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			<aside>

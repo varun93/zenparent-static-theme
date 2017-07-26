@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   border: 0;
@@ -9,6 +10,9 @@ body {
   font-family: "Playfair Display",serif;
  }
 
+ul{
+  padding-left: 0px;
+}
 
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;

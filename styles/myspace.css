@@ -1,0 +1,31 @@
+.lifestage-wrapper{
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: top;
+}  
+
+.lifestage-selector{
+    margin-bottom:20px; 
+}
+
+.lifestage-label{
+    color: #4a4a4a;
+    font-size: 16px;
+}
+    
+.lifestage-image img{
+    width: 180px;
+    height: 180px;
+}
+
+@media screen and (max-width: 400px){
+
+    .lifestage-image img{
+        width: 100px;
+        height: 100px;
+    }
+}
