@@ -89,15 +89,23 @@
     color: #666;
 }
 
+#menu .modal-footer ul{
+  text-align: center;
+}
+
+#menu .modal-footer li a{
+   color: #666;
+}
+
 /* Menu Lists */
 
 #menu ul{
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #menu ul li{
   margin-bottom: 20px;
-  line-height: 59px;
   list-style: none;
 }
 
@@ -108,7 +116,6 @@
   text-transform: uppercase;
   background: #fff;
   display: block;
-  margin: 0px 28px;
 }
 
 /* Blog Links Menu*/
@@ -118,8 +125,7 @@
   }
 
 #menu ul.blog-links-menu li a{
-  font-size: 32px;
-  letter-spacing: 2px;
+  font-size: 24px;
   padding: 0 5px;
   color: #000;
 }
@@ -141,10 +147,6 @@
 }
 
 
-#menu .modal-footer li a{
-   color: #666;
-}
-
 @media screen and (max-width: 600px){
 
   #menu .modal-footer li{
@@ -154,6 +156,24 @@
 }
 
 @media screen and (min-width: 759px){
+  
+  #menu ul{
+    text-align: left;
+  }
+
+  #menu ul li{
+    line-height: 59px;
+  }
+
+  #menu ul li a{
+    margin: 0px 28px;
+  }
+
+  /* Font Size */
+  #menu ul.blog-links-menu li a{
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
 
   #menu .featured-list-menu li a{
     color: #023B49;
@@ -168,9 +188,6 @@
     display: block;
   }
 
-  #menu ul li{
-    line-height: 59px;
-  }
   
   #menu .featured-list-menu li:first-child{
     text-transform: uppercase;
