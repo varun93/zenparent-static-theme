@@ -1,4 +1,18 @@
 /* Post title */
+
+h1.post-title, h2.post-title{
+    font-family: "Playfair Display",serif;
+    font-weight: bold;
+    text-transform: none;
+    line-height: 1.4em;
+	font-size: 20px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    border-left: 0;
+    padding-left: 0;
+    color: #000;
+}
+
 h1.post-title, h2.post-title{
     font-family: "Playfair Display",serif;
     font-weight: bold;
