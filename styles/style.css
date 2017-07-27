@@ -6,9 +6,12 @@
 body {
   margin: 0;
   border: 0;
-  font-size: 100%;
-  font-family: "Playfair Display",serif;
  }
+
+body,body p,body ul{
+   font-size: 16px;
+   font-family: "Open Sans",sans-serif;
+}
 
 ul{
   padding-left: 0px;

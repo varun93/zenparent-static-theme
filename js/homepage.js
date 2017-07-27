@@ -54,13 +54,13 @@ function fetchArticles(){
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
-		      "category" : "Parenting",
+		      "category" : "Lifestyle",
 		      "image" : "http://lorempixel.com/650/650/people/3",
 		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Mums having a C-section – are you prepared for this?",
-		      "category" : "Pregnancy",
+		      "category" : "Celebrity",
 		      "image" : "http://lorempixel.com/850/850/nature/4",
 		      "permalink" : "/single.html"
 		    }
@@ -75,13 +75,13 @@ function fetchArticles(){
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
-		      "category" : "Parenting",
+		      "category" : "Lifestyle",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/Can-you-tell-if-your-child-is-gay-2-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Mums having a C-section – are you prepared for this?",
-		      "category" : "Pregnancy",
+		      "category" : "Celebrity",
 		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Why-do-I-HATE-breastfeeding-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    }
@@ -102,25 +102,25 @@ function fetchArticles(){
 		    },
 		    {
 		      "title" : "Mums having a C-section – are you prepared for this?",
-		      "category" : "Pregnancy",
+		      "category" : "Celebrity",
 		      "image" : "https://cdn4.zenparent.in/wp-content/uploads/2017/06/From-the-Editors-desk-Your-kids-can-take-care-of-you-if-you-let-them-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
-		     {
+		    {
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
-		      "category" : "Parenting",
+		      "category" : "Lifestyle",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/7-ways-to-JUMPSTART-your-natural-weight-loss-post-delivery-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
-		      "category" : "Parenting",
+		      "category" : "Celebrity",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/Can-you-tell-if-your-child-is-gay-2-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Mums having a C-section – are you prepared for this?",
-		      "category" : "Pregnancy",
+		      "category" : "Lifestyle",
 		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Why-do-I-HATE-breastfeeding-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    }

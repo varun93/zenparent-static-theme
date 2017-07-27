@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card {{featured}}">
   <a href="{{permalink}}" >
       <img class="img-responsive" src="{{image}}">
       <div class="overlay">
@@ -6,7 +6,7 @@
       </div>
   </a>
   {{#if category}}
-      <a href="#" class="category-label {{category}}">
+      <a href="#" class="category-label {{lowercase category}}">
         <div>
           <span>
             {{category}}

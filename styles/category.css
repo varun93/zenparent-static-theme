@@ -1,24 +1,27 @@
 .subcategory-menu{
-	text-align: center;
+	display: inline-block;
 }
 
 .subcategory-menu li{
 	display: block;
-	padding: 5px 10px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	font-size: 18px;
     text-transform: uppercase;
     line-height: normal;
     padding-left: 10px;
+
 }
 
 .subcategory-menu li a{
-	color: black;
+	color: #023B49;
+	font-family:"Open Sans", sans-serif;
 }
 
 .list-header{
-	text-align: center;
 	color: #fff;
+	background: #05B6BD;
 	font-size: 19px;
+	margin-bottom: 20px;
+	padding: 7px 10px 5px;
 } 
 

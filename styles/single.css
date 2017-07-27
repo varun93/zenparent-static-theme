@@ -55,10 +55,10 @@ h1.post-title, h2.post-title{
 /* Post Body */
 .post-body {
     position: relative;
+    color: #080a0b;
     font: normal 16px "Open Sans",sans-serif;
     line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #000;
+	font-weight: 200;
 }
 
 /* Related Posts */
@@ -90,8 +90,7 @@ h1.post-title, h2.post-title{
 	}
 	
 	.post-body {
-	    font-size: 18px;
-	    line-height: 30px;
+	    line-height: 26px;
 	}
 	
 	/* Info Bar */

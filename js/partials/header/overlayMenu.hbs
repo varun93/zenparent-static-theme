@@ -29,27 +29,44 @@
       
       <!-- body -->
       <div class="modal-body">
-         <ul class="menu-list blog-links-menu">
-          <li class=""><a href="/parenting.html">Parenting</a></li>
-          <li class=""><a href="#">Lifestyle</a></li>
-          <li class=""><a href="#">Entertainment</a></li>
-          <li><a href="#">My Space</a></li>
-          <div class="line"></div>
-         </ul>
          
-         <!-- Featured -->
-         <ul class="menu-list featured-list-menu">
-            <li>Featured</li>
-            <li><a href="#">Item One</a></li>
-            <li><a href="#">Item two</a></li>
-            <li><a href="#">Item Three</a></li>
-            <li><a href="#">Item Four</a></li>
-         </ul>
+         <div style="margin-top: 60px; " class="container">
+            <div class="row">
+              <div class="col-lg-offset-2 col-lg-4">
+                {{#slice slotOne 0 1}}
+                    {{> cards/cardTemplate }}
+                {{/slice}}
+              </div>
+              <div class="col-lg-4">
+                <ul class="menu-list blog-links-menu">
+                  <li class=""><a href="/parenting.html">Parenting</a></li>
+                  <li class=""><a href="#">Lifestyle</a></li>
+                  <li class=""><a href="#">Entertainment</a></li>
+                  <li><a href="#">My Space</a></li>
+                  <div class="line"></div>
+                </ul>
+         
+                 <!-- Featured -->
+                 <ul class="menu-list featured-list-menu">
+                    <li>Featured</li>
+                    <li><a href="#">Item One</a></li>
+                    <li><a href="#">Item two</a></li>
+                    <li><a href="#">Item Three</a></li>
+                    <li><a href="#">Item Four</a></li>
+                 </ul>
+
+              </div>
+
+            </div>
+
+         </div>    
+  
+        
       </div>
       <!-- body -->
 
       <!-- footer -->
-      <div class="modal-footer">
+<!--       <div class="modal-footer">
         <ul class="menu-list">
           <li><a href="#">About</a></li>
           <li><a href="#">Privacy</a></li>
@@ -57,7 +74,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
 
-      </div>
+      </div> -->
       <!-- footer -->
 
     </div>

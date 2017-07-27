@@ -1,12 +1,14 @@
 <div class="widget {{colour}} col-lg-12 col-xs-12 col-md-12 col-sm-12">
    <div class="row">
-      <div class="col-xs-4 col-lg-12 col-md-12 col-sm-12 widget-icon">
+      <div class="col-xs-4 col-lg-12 col-md-12 col-sm-4 widget-icon">
          <img class="center-block" src="{{image}}" />
       </div>
-      <div class="col-xs-8 col-lg-12 col-md-12 col-sm-12 widget-info">
-         <div class="title"><h4>{{primaryHeading}}</h4></div>
+      <div class="col-xs-8 col-lg-12 col-md-12 col-sm-8 widget-info">
+         <div class="title"><p>{{primaryHeading}}</p></div>
          <div class="description"><p>{{secondaryHeading}}</p></div>
-         <a href="{{target}}" class="call-to-action">{{buttonText}}</a>
+         <div class="call-to-action">
+            <a class="center-block" href="{{target}}">{{buttonText}}</a>
+         </div>
       </div>
    </div>
 </div>

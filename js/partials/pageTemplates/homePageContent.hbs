@@ -1,6 +1,6 @@
 <section class="content">
       <!-- Row One -->
-      <div class="row featured-articles-home">
+      <div class="row articles-block top-articles-home">
            {{#each slotOne}}
               <div class="col-lg-4 col-md-4 col-sm-4">
                   {{>  cards/cardTemplate }}
@@ -9,14 +9,16 @@
       </div>
 
      <!-- Row 2,3,4  -->
-      <div>
+      <div class="articles-block featured-articles-home">
          <div class="col-lg-8 col-md-8 col-sm-8">
             {{#each slotTwo}}
-                {{>  cards/cardTemplate }}
+               <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                {{>  cards/cardTemplate featured='featured' }}
+                </div>
             {{/each}}
           </div>
           
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-2">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-1">
               <div class="trending-homepage">
                 <h3> Trending </h3>
                   <span class="trending-icon glyphicon glyphicon-flash"></span>
@@ -36,7 +38,7 @@
 
     
      <!-- Row 5,6,n  -->
-     <div class="row">
+     <div class="articles-block row">
        <div class="col-lg-12 col-md-12 col-sm-12">
             {{#each slotThree}}
                 <div class="col-lg-4 col-md-4 col-sm-6">

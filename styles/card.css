@@ -15,14 +15,29 @@
 	font-size: 20px;
 }
 
-.category-label > div > span{
-	border-top: 2px solid #8675A1;
+.category-label span{
+	border-top: 2px solid #05B6BD;
+	color: #05B6BD;
 	font-size: 12px;
 	font-weight: bold;
 }
 
+.category-label.parenting span{
+	border-top: 2px solid #FF547C;
+	color: #FF547C;
+}
 
-.card .overlay,.card-category .overlay{
+.category-label.lifestyle  span{
+	border-top: 2px solid #009FA0;
+	color: #009FA0;
+}
+
+.category-label.celebrity  span{
+	border-top: 2px solid #EF8A3F;
+	color: #EF8A3F;
+}
+
+.card .overlay{
 	display: block;
     position: relative;
     background: white;
@@ -38,26 +53,6 @@
 	line-height: 24px;
 }
 
-
-@media screen and (max-width: 600px){
-	.card .overlay{
-    	width : 80%;
-	}
-}
-
-@media screen and (min-width: 759px){
-	.card .overlay{
-		min-height: 95px;
-    	width : 88%;
-	}
-}
-
-@media screen and (min-width: 1280px){
- .card .overlay{
- 	font-size:24px;
-	line-height:30px;
- }	
-}
 
 /*Card small used in trending widget*/
 .card-small{
@@ -77,8 +72,10 @@
 
 .card-small-title span{
 	font-size: 18px;
-	line-height: 16px;
+	line-height: 21px;
+	font-family: "Playfair Display", serif;
 	font-weight: bold;
+	color: #080a0b; 
 }
 
 /*  Card category overlay  */
@@ -98,6 +95,17 @@
 }
 
 
+.card-category.regular  .overlay {
+ 	margin: 0px auto 20px;
+	border: none;
+	border-bottom: 2px solid #E6E6E6;
+	width: 100%;
+}
+
+.card-category.regular .title{
+	font-size: 18px;
+}
+
 .card-category .title {
     display: block;
     position: relative;
@@ -110,10 +118,41 @@
 }
 
 
+
+@media screen and (max-width: 375px){
+	.card .overlay{
+    	width : 80%;
+	}
+}
+
+@media screen and (min-width: 759px){
+	.card .overlay{
+		min-height: 95px;
+		width : 80%;
+		font-weight: bold;
+	}
+	
+}
+
+@media screen and (min-width: 1280px){
+ .card .overlay{
+ 	font-size:24px;
+	line-height:30px;
+ }	
+
+ .card.featured .overlay{
+	width: 495px;
+	font-size: 26px;
+	line-height: 33px;
+	padding: 18px 50px 22px;
+ }
+
+}
+
 @media screen and (min-width: 1025px){
 
 	.card-category .overlay{
-		width: 88%;
+		width: 458px;
 	}
 
 	.card-category .category-label{
@@ -124,10 +163,18 @@
 		font-size: 14px;
 	}
 	
+	.card-category .category-label > div{
+		margin-top: -19px;
+	}
+
+
 	.card-category .title {
-	    font-size: 22px;
-	    line-height: 30px;
-	    margin-bottom: 10px;
+	    font-size: 26px;
+	    line-height: normal;
+	}
+	
+	.card-category.regular .title{
+		font-size: 24px;
 	}
 
 }

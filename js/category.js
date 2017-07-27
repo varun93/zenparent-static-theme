@@ -23,13 +23,13 @@ function fetchArticles(){
 		"slotOne": [
 		    {
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
-		      "category" : "Parenting",
+		      "category" : "Toddlers",
 		      "image" : "http://lorempixel.com/650/650/people/5",
 		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
-		      "category" : "Parenting",
+		      "category" : "Babies",
 		      "image" : "http://lorempixel.com/700/700/people/2",
 		      "permalink" : "/single.html"
 		    },
@@ -49,13 +49,13 @@ function fetchArticles(){
 		    },
 		     {
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
-		      "category" : "Parenting",
+		      "category" : "Pregnancy",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/7-ways-to-JUMPSTART-your-natural-weight-loss-post-delivery-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
-		      "category" : "Parenting",
+		      "category" : "Toddlers",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/Can-you-tell-if-your-child-is-gay-2-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
@@ -69,7 +69,7 @@ function fetchArticles(){
 		"editorial" : [	
 			{
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
-		      "category" : "Parenting",
+		      "category" : "Toddlers",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/7-ways-to-JUMPSTART-your-natural-weight-loss-post-delivery-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    }
@@ -77,13 +77,13 @@ function fetchArticles(){
 		"slotThree": [
 		  	{
 		      "title" : "Mommies, this is the simplest trick to lose weight!",
-		      "category" : "Parenting",
+		      "category" : "Babies",
 		      "image" : "https://cdn3.zenparent.in/wp-content/uploads/2017/07/Mommies-this-is-the-simplest-trick-to-lose-weight-Thank-us-later-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
 		    {
 		      "title" : "Wholesome first foods your 6-month-old will love!",
-		      "category" : "Parenting",
+		      "category" : "Pregnancy",
 		      "image" : "https://cdn1.zenparent.in/wp-content/uploads/2017/07/4-ways-to-instill-positive-body-image-in-your-daughter-1-1024x538.png",
 		      "permalink" : "/single.html"
 		    },
