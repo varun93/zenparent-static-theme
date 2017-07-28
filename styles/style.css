@@ -31,6 +31,10 @@ section.content{
   }
 } 
 
+.articles-block{
+  margin-bottom: 20px; 
+}
+
 .zp-primary-background{
   background: #8675A1;  
 }
