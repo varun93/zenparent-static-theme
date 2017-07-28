@@ -140,6 +140,15 @@ $(document).ready(function(){
 
 	renderPage();
 
+	$('#drop-down').click(function(e){
+		$(this).find("ul").toggleClass("hide");
+		var signElement = $(this).find("i"); 
+		var sign =  signElement.text().trim();
+		sign = (sign == '+') ? '-' : '+'; 
+		signElement.text(sign);
+		return false;
+	});
+
 	// search related
 	var searchHeader = $(".header-search");
 	$(".search span").click(function(){

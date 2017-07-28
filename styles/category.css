@@ -28,10 +28,6 @@
 
 /* Category Menu */
 
-#category-header{
-	margin-left: -15px;
-}
-
 #category-header h1{
   font-size: 20px;
   text-transform: lowercase;
@@ -59,4 +55,23 @@
   margin-top: -13.5px;
   color: #05B6BD;
   font-weight: bold;
+}
+
+.drop-down ul {
+    border: 1px solid #000;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    padding: 10px;
+}
+
+.drop-down ul li{
+	list-style: none;
+}
+
+.drop-down ul li a{
+	font-size: 14px;
+    color: #888;
 }
