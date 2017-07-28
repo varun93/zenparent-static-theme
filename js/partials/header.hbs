@@ -1,6 +1,9 @@
 <header id="header" class="header">
-  {{> header/primaryHeader }}
-  {{> header/secondaryHeader }}
-  {{> header/search}}
+  <div class="container-fluid">
+	  {{> header/primaryHeader }}
+	  <div class="clearfix"></div>
+	  {{> header/secondaryHeader }}
+</div>
+ {{> header/search}}
 </header>
 {{> header/overlayMenu}}

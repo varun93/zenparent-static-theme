@@ -22,12 +22,12 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 section.content{
-  padding-top: 130px;
+  padding-top: 120px;
 }
 
 @media screen and (max-width: 600px){
   section.content{
-   padding-top: 75px;
+   padding-top: 65px;
   }
 } 
 
