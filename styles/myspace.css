@@ -3,10 +3,11 @@
     cursor: pointer;
     position: relative;
     vertical-align: top;
+    opacity: 0.4;
 }  
 
 .lifestage-wrapper.selected{
-    opacity: 0.4;
+    opacity: 1;
 }
 
 .lifestage-selector{

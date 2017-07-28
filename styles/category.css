@@ -25,3 +25,38 @@
 	padding: 7px 10px 5px;
 } 
 
+
+/* Category Menu */
+
+#category-header{
+	margin-left: -15px;
+}
+
+#category-header h1{
+  font-size: 20px;
+  text-transform: lowercase;
+  border-left: 4px solid #05B6BD;
+  margin: 20px 0 17px 10px;
+  padding-left: 10px;
+  line-height: 23px;
+}
+
+#drop-down{
+  position : relative;
+}
+
+#drop-down > a{
+  color: #666;
+  position: relative;
+  padding-right: 15px;
+}
+
+#drop-down > a > i{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  line-height: normal;
+  margin-top: -13.5px;
+  color: #05B6BD;
+  font-weight: bold;
+}
