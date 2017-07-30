@@ -6,7 +6,13 @@ var category = path.resolve(__dirname, 'js','category');
 var single = path.resolve(__dirname, 'js','single');
 var myspace = path.resolve(__dirname, 'js','myspace');
 
+// webpack plugins
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+// Commons chunk plugin
+var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+
+// vendor: ["jquery", "other-lib"]
 
 module.exports = {
    entry: {
@@ -53,6 +59,40 @@ module.exports = {
      return [autoprefixer];
     },
     plugins : [
-      new ExtractTextPlugin('[name].css')
+        new ExtractTextPlugin('[name].css'),
+        new CommonsChunkPlugin({
+                name: 'commons',
+                filename: 'commons-[hash].js',
+                chunks: ['homepage', 'category','single','myspace']
+            }),
+        new HtmlWebpackPlugin({
+          template : path.resolve(__dirname, 'js','index.html'),
+          hash : false,
+          filename : 'index.html',
+          chunks : ['commons','homepage']
+         }),
+        new HtmlWebpackPlugin({
+        template : path.resolve(__dirname, 'js','index.html'),
+        hash : false,
+        filename : 'parenting.html',
+        chunks : ['commons','category']
+       }),
+        new HtmlWebpackPlugin({
+        template : path.resolve(__dirname, 'js','index.html'),
+        hash : false,
+        filename : 'single.html',
+        chunks : ['commons','single']
+       }),
+        new HtmlWebpackPlugin({
+        template : path.resolve(__dirname, 'js','index.html'),
+        hash : false,
+        filename : 'my-space.html',
+        chunks : ['commons','myspace']
+       }),
+        new webpack.DefinePlugin({
+          'process.env': {
+            'NODE_ENV': JSON.stringify('developement')
+          }
+        })
     ]
 };

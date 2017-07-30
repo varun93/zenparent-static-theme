@@ -95,33 +95,21 @@ function fetchArticles(){
 		    }
 		],
 		"menu" :  [{
-				'label' : 'Trying',
-				'permalink' : '#'
-				},
-				{
-				'label' : 'Pregnant',
-				'permalink' : '#'
-				},
-				{
-				'label' : 'Babies',
-				'permalink' : '#'
-				},
-				{
-				'label' : 'Toddlers',
-				'permalink' : '#'
-				},
-				{
-				'label' : 'Big Kids',
-				'permalink' : '#'
-				},
-				{
-				'label' : 'Baby Names',
-				'permalink' : '#'
-				},
-				{
-				'label' : 'Tools',
-				'permalink' : '#'
-				}
+			'label' : 'Relationships',
+			'permalink' : '#'
+			},
+			{
+			'label' : 'Beauty',
+			'permalink' : '#'
+			},
+			{
+			'label' : 'Wellness',
+			'permalink' : '#'
+			},
+			{
+			'label' : 'Food and Health',
+			'permalink' : '#'
+			}
 			]
 	};
 
