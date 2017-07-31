@@ -1,4 +1,4 @@
-.card{
+.article-card{
 	margin-bottom : 20px;
 }
 
@@ -37,7 +37,7 @@
 	color: #EF8A3F;
 }
 
-.card .overlay{
+.article-card .overlay{
 	display: block;
     position: relative;
     background: white;
@@ -81,7 +81,7 @@
 /*  Card category overlay  */
 
 .card-category .category-label > div{
-	margin-top: -16px;
+	margin-top: -13px;
 }
 
 .card-category .category-label{
@@ -120,13 +120,13 @@
 
 
 @media screen and (max-width: 375px){
-	.card .overlay{
+	.article-card .overlay{
     	width : 80%;
 	}
 }
 
 @media screen and (min-width: 759px){
-	.card .overlay{
+	.article-card .overlay{
 		min-height: 95px;
 		width : 80%;
 		font-weight: bold;
@@ -135,12 +135,12 @@
 }
 
 @media screen and (min-width: 1280px){
- .card .overlay{
+ .article-card .overlay{
  	font-size:24px;
 	line-height:30px;
  }	
 
- .card.featured .overlay{
+ .article-card.featured .overlay{
 	width: 495px;
 	font-size: 26px;
 	line-height: 33px;

@@ -125,14 +125,14 @@ h3.related-posts-heading:after{
 }
 
 /* Card Design Overide */
-.single .card .overlay{
+.single .article-card .overlay{
 	font-size: 18px;
 	line-height: 24px;
 	width: 90%;
 	min-height: 65px;
 }
 
-.single .card .category-label{
+.single .article-card .category-label{
 	display: none;
 }
 
