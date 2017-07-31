@@ -44,6 +44,7 @@ jspm_packages
 stats.json
 
 #dist files
+dist/
 dist/*.css
 dist/*.js
 dist/*.map
