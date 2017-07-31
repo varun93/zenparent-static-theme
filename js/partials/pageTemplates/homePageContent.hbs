@@ -1,6 +1,6 @@
 <section class="content">
       <!-- Row One -->
-      <div class="row articles-block top-articles-home">
+      <div class="row margin-bottom-20 top-articles-home">
            {{#each slotOne}}
               <div class="col-lg-4 col-md-4 col-sm-4">
                   {{>  cards/cardTemplate }}
@@ -9,7 +9,7 @@
       </div>
 
      <!-- Row 2,3,4  -->
-      <div class="articles-block featured-articles-home">
+      <div class="margin-bottom-20 featured-articles-home">
          <div class="col-lg-8 col-md-8 col-sm-8">
             {{#each slotTwo}}
                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
@@ -18,12 +18,11 @@
             {{/each}}
           </div>
           
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-1">
+          <div class="sidebar col-lg-4 col-md-4 col-sm-4 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-0 col-xs-offset-1">
               <div class="trending-homepage">
                 <h3> Trending </h3>
-                  <span class="trending-icon glyphicon glyphicon-flash"></span>
                  {{#each slotTwo}}
-                      {{>  cards/cardTemplate }}
+                    {{>  cards/cardTemplate }}
                 {{/each}}
               </div>
               
@@ -38,7 +37,7 @@
 
     
      <!-- Row 5,6,n  -->
-     <div class="articles-block row">
+     <div class="margin-bottom-20 row">
        <div class="col-lg-12 col-md-12 col-sm-12">
             {{#each slotThree}}
                 <div class="col-lg-4 col-md-4 col-sm-6">
@@ -49,8 +48,7 @@
      </div>
 
      <!-- One Featured -->
-     <div class="row articles-block">
-        
+     <div class="row margin-bottom-20">
         <div class="col-lg-offset-2 col-md-offset-2 col-xs-offset-0 col-xs-12 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
           {{#slice slotTwo 0 1}}
            <div class="col-xs-12">
@@ -67,5 +65,3 @@
        </div>
     </div>
 </section>
-<!-- Pager -->
-{{> commons/pager }}

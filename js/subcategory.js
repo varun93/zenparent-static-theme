@@ -14,7 +14,7 @@ require('../styles/footer.css');
 var $ = require('jquery');
 global.jQuery = $; 
 require('bootstrap/dist/js/bootstrap.min.js');
-var template = require('./template-category');
+var template = require('./template-subcategory');
 
 
 function fetchArticles(){

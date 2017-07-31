@@ -72,7 +72,7 @@ h1.post-title, h2.post-title{
     color: #080a0b;
     font: normal 16px "Open Sans",sans-serif;
     line-height: 24px;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 /* Related Posts */
@@ -80,9 +80,48 @@ h1.post-title, h2.post-title{
 	font-weight: bold;
 }
 
-.related-posts h4::after{
+.related-posts h4:after{
 	width: 72%;
 	border-width: 4px;
+}
+
+h3.related-posts-heading{
+	position: relative;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h3.related-posts-heading:after{
+	content: '';
+    width: 65%;
+    margin-left: 8px;
+    height: 2px;
+    background: #05B6BD;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+}
+   
+
+
+/* Tag Cloud */
+.tagcloud ul li {
+    display: inline-block;
+    margin: 0 .3em .3em 0;
+    padding: 0;
+}
+
+.tagcloud ul li a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 0px 1em;
+    background-color: #8675A1;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
 }
 
 /* Card Design Overide */
@@ -96,6 +135,20 @@ h1.post-title, h2.post-title{
 .single .card .category-label{
 	display: none;
 }
+
+@media (min-width: 759px){
+	
+	h3.related-posts-heading:after{
+	    height: 4px;
+	    margin-top: -2px;
+	}
+
+	h3.related-posts-heading:after{
+		width: 90%;
+	}
+
+}
+
 
 @media screen and (min-width: 1025px){
 	h1.post-title, h2.post-title{

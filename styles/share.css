@@ -72,15 +72,10 @@
 
 /* Share strip inside article  */
 
-.share-bar{
-    /*margin-bottom: 15px;*/
-}
-
 .share-bar li{
     margin-right: 15px;
     display: inline-block;
     vertical-align: top;
-    /*float: left;*/
 }
 
 .share-bar li a{
@@ -130,3 +125,16 @@
 
 }
 
+
+@media screen and (max-width: 450px){
+    
+    .share-bar li{
+        margin-right: 10px;
+    }
+
+    .share-bar li a{
+        padding: 5px;
+        line-height: 24px;
+    }
+
+}

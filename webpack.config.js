@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var autoprefixer = require('autoprefixer'); 
 var homepage = path.resolve(__dirname, 'js','homepage');
 var category = path.resolve(__dirname, 'js','category');
+var subcategory = path.resolve(__dirname, 'js','subcategory');
 var single = path.resolve(__dirname, 'js','single');
 var myspace = path.resolve(__dirname, 'js','myspace');
 
@@ -19,7 +20,8 @@ module.exports = {
         homepage : homepage,
         category : category,
         single : single,
-        myspace : myspace
+        myspace : myspace,
+        subcategory : subcategory
     },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -39,9 +41,9 @@ module.exports = {
                     path.resolve(__dirname, "js/helpers")
                   ],
                    partialDirs: [
-                    path.join(__dirname, 'js', 'partials'),
-                    path.join(__dirname, 'js', 'partials','cards'),
-                    path.join(__dirname, 'js', 'partials','widgets')
+                    path.resolve(__dirname, 'js', 'partials'),
+                    path.resolve(__dirname, 'js', 'partials','cards'),
+                    path.resolve(__dirname, 'js', 'partials','widgets')
                   ]
                 }
             },
@@ -76,6 +78,12 @@ module.exports = {
         hash : false,
         filename : 'parenting.html',
         chunks : ['commons','category']
+       }),
+       new HtmlWebpackPlugin({
+        template : path.resolve(__dirname, 'js','index.html'),
+        hash : false,
+        filename : 'subcategory.html',
+        chunks : ['commons','subcategory']
        }),
         new HtmlWebpackPlugin({
         template : path.resolve(__dirname, 'js','index.html'),

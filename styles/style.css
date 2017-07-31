@@ -2,6 +2,72 @@
   box-sizing: border-box;
 }
 
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: top;
+  background: transparent;
+}
+
+a{vertical-align: baseline;}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  display: block;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6, span, p, input {
+  margin: 0;
+  padding: 0;
+}
+
+table, tr, td {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+}
 
 body {
   margin: 0;
@@ -31,18 +97,23 @@ section.content{
   }
 } 
 
-.articles-block{
-  margin-bottom: 20px; 
+/* Margin Utils */
+.margin-bottom-5{
+  margin-bottom: 20px;
 }
 
-.zp-primary-background{
-  background: #8675A1;  
+.margin-bottom-10{
+  margin-bottom: 10px;
 }
 
-.zp-primary-color{
-  color: #8675A1;  
+.margin-bottom-15{
+  margin-bottom: 20px;
 }
 
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+/* End of margin utils */
 
 .trending-homepage h3{
     overflow: hidden; 
@@ -64,14 +135,17 @@ section.content{
   border-bottom: 2px solid #8675A1;
 }
 
-.trending-icon{
-    float: right;
-    top: -28px;
-    right: 20px;
-    font-size: 16px;
-    color: indianred;
+.sidebar .category-label{
+  display: none;
 }
 
+@media screen and (min-width: 1025px){
+  
+  .sidebar{
+    padding-left: 60px;
+  } 
+
+}
 
 @media screen and (max-width: 600px){
   .trending-homepage h3:after{

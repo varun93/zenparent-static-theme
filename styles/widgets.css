@@ -67,9 +67,15 @@
    font-family: "Playfair Display",serif;
 }
 
+@media screen and (max-width: 340px){
+   .widget .widget-icon img{
+      width: 60px;
+      height: 60px;
+   }
+}
 
 @media screen and (min-width: 1025px){
    .widget .widget-info .call-to-action a{
-      width: 50%;
+      width: 75%;
    }
 }
