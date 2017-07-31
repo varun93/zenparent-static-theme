@@ -25,7 +25,7 @@
 .top-menu .menu-item a {
 	color: black;
 }
-
+x
 .top-menu .search,.top-menu .menu{
 	padding-top: 10px;
 }
@@ -43,6 +43,14 @@
 	float: left;
 	list-style: none;
 	margin-right: 55px;
+}
+
+.bottom-menu .menu-item.active{
+	border-top: 2px solid #013B49;
+}
+
+.bottom-menu .menu-item.active a{
+	color: #013B49;	
 }
 
 .bottom-menu .menu-item a{
