@@ -139,7 +139,7 @@ section.content{
   display: none;
 }
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1024px){
   
   .sidebar{
     padding-left: 60px;

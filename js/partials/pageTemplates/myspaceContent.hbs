@@ -3,14 +3,15 @@
 		<div class="row">
 		<!-- Main Content -->
 		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+		<div class="row">
 			
 			<!-- Lifestyle Selector -->
-			<div class="col-xs-12 margin-bottom-20 col-md-12 col-lg-11 col-lg-offset-1 col-sm-12 lifestage-selector">	
-				<h1 class="text-center">Create your own personalized ZenParent</h1>
-				<h2 class="text-center">You are ?</h2>
-				<div class="row">
+			<div class="col-xs-12 margin-bottom-20 col-md-12 col-lg-12 col-sm-12 lifestage-selector">	
+				<h2 class="text-center margin-bottom-10">Create your own personalized ZenParent</h2>
+				<h3 class="text-center margin-bottom-10">You are ?</h3>
+				<div class="row col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
 							{{#each lifestage}}
-								<div class="lifestage-wrapper {{selected}} col-lg-4 col-md-4 col-sm-4 col-xs-12  col-xs-4">
+								<div class="lifestage-wrapper {{selected}} col-lg-3 col-md-3 col-sm-3 col-xs-4">
 									<div class="lifestage-image">
 										<img class="img-responsive" src="{{image}}">
 									</div>
@@ -27,7 +28,7 @@
 			<div class="col-xs-12 margin-bottom-20 col-md-12 col-lg-12 col-sm-12">
 				<div class="row">
 						<!--   -->
-						<h2 class="text-center">Was born on</h2>
+						<h3 class="text-center margin-bottom-10">Was born on</h3>
 						<!-- Wrapper  -->
 						<div class="form-inline select-wrapper">
               				<div class="form-group">
@@ -60,7 +61,7 @@
 	<div class="col-xs-12 margin-bottom-20 text-center col-md-12 col-lg-12 col-sm-12">
 		<div class="row">
 		<!--   -->
-		<h2 class="text-center">Your Interests</h2>
+		<h3 class="text-center margin-bottom-10">Your Interests</h3>
 		<div class="interests-wrapper">
 			   {{#each interests}}
 			    <span class="interest {{selected-interest}}" data-term="{{interest-term}}">{{interest-label}}</span>
@@ -71,7 +72,7 @@
 		</div>
 	</div>
 	<!-- End of user Interests -->
-
+	</div>
 	</div>
 		<!-- End of Main Content -->
 		

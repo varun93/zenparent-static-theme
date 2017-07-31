@@ -150,7 +150,7 @@ h3.related-posts-heading:after{
 }
 
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1024px){
 	h1.post-title, h2.post-title{
 	    font-size: 42px;
 	    margin-bottom: 20px;
