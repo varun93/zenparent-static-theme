@@ -1,27 +1,8 @@
 .widget{
    margin-bottom: 25px;
-   padding : 20px;
+   padding : 10px;
    border-radius: 5px;
-}
-
-.widget.pink{
-   background: #FF547C;
-}
-
-.widget.blue{
-   background: #009FA0;
-}
-
-.widget.orange{
-   background: #EF8A3F;
-}
-
-.widget.green{
-   background: #86AB6F;
-}
-
-.widget.purple{
-   background: #8675A1;
+   border: 1px solid #CCC;
 }
 
 .widget .widget-icon img{
@@ -32,12 +13,13 @@
 .widget .widget-info{
    text-align: center;
    display: block;
-   color: white;
+   color: #666;
    font-size: 18px;
 }
 
 .widget .widget-info .title{
    font-weight: 500;
+   text-transform: uppercase;
    line-height: 24px;
 }
 
@@ -55,27 +37,28 @@
 }
 
 .widget .widget-info .call-to-action a{
-   border-radius: 25px;
-   background: transparent;
+   border-radius: 5px;
+   background: #666;
    display: block;
    padding: 10px; 
-   color : white;
-   border : 1px solid white;
+   color : #fff;
+   border : 1px solid #666;
 }
 
 .widget .widget-info .description p,.widget .widget-info .call-to-action a{
    font-family: "Playfair Display",serif;
 }
 
-@media screen and (max-width: 340px){
-   .widget .widget-icon img{
-      width: 60px;
-      height: 60px;
-   }
-}
-
 @media screen and (min-width: 1024px){
    .widget .widget-info .call-to-action a{
       width: 75%;
+   }
+}
+
+@media screen and (max-width: 414px){
+  
+   .widget .widget-icon img{
+      width: 80px;
+      height: 80px;
    }
 }

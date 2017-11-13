@@ -1,3 +1,29 @@
+/*Card small used in trending widget*/
+.card-small{
+	padding: 0px; 
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #D9D9D8;
+}
+
+.card-small-img{
+	padding-left: 0px;	
+}
+
+.card-small-title{
+	padding: 0px;	
+}
+
+.card-small-title span{
+	font-size: 18px;
+	line-height: 21px;
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
+	color: #080a0b; 
+}
+
+/*  Card category overlay  */
+
 .article-card{
 	margin-bottom : 20px;
 }
@@ -11,7 +37,7 @@
 .category-label > div{
 	display: block;
 	text-align: center;
-	margin-top: -19px;
+	margin-top: -27px;
 	font-size: 20px;
 }
 
@@ -49,39 +75,55 @@
 	font-family: "Playfair Display",serif;
     width: 260px;
     font-weight: bold;
-	font-size: 18px;
+	font-size: 1.125em;
 	line-height: 24px;
 }
 
-
-/*Card small used in trending widget*/
-.card-small{
-	padding: 0px; 
-	margin-bottom: 15px;
-	padding-bottom: 15px;
-	border-bottom: 1px solid #D9D9D8;
+.trending-homepage .article-card .overlay{
+	width: 80% !important;
 }
 
-.card-small-img{
-	padding-left: 0px;	
+@media screen and (min-width: 759px){
+	
+	.article-card .overlay{
+		min-height: 105px;
+	}
+
+	.article-card.top .overlay{
+		min-height: 95px;
+		width : 88%;
+		font-size: 24px;
+		line-height: 31px;
+	}
+
+	.article-card.featured .overlay{
+		min-height: 95px;
+		width : 340px;
+	}
 }
 
-.card-small-title{
-	padding: 0px;	
+@media screen and (min-width: 1280px){
+
+	 .article-card .overlay{
+		width: 355px;
+		line-height:27px;
+		min-height: 100px;
+		margin-top: -15px;
+	 }	
+
+	 .article-card.featured .overlay{
+		width: 495px;
+		font-size: 26px;
+		line-height: 33px;
+		padding: 18px 50px 22px;
+	 }
 }
 
-.card-small-title span{
-	font-size: 18px;
-	line-height: 21px;
-	font-family: "Playfair Display", serif;
-	font-weight: bold;
-	color: #080a0b; 
-}
 
-/*  Card category overlay  */
 
+/* Card Category */
 .card-category .category-label > div{
-	margin-top: -13px;
+	margin-top: -15px;
 }
 
 .card-category .category-label{
@@ -95,7 +137,7 @@
 }
 
 
-.card-category.regular  .overlay {
+.card-category .overlay {
  	margin: 0px auto 20px;
 	border: none;
 	border-bottom: 2px solid #E6E6E6;
@@ -117,42 +159,23 @@
     line-height: 23px;
 }
 
-
-
-@media screen and (max-width: 375px){
-	.article-card .overlay{
-    	width : 80%;
-	}
+.card-category.featured .overlay{
+	margin: -40px auto 20px;
 }
 
-@media screen and (min-width: 759px){
-	.article-card .overlay{
-		min-height: 95px;
-		width : 80%;
-		font-weight: bold;
-	}
-	
-}
+.card-category.featured .title{
+	font-size: 18px;
+	min-height: auto;
+} 
 
-@media screen and (min-width: 1280px){
- .article-card .overlay{
- 	font-size:24px;
-	line-height:30px;
- }	
 
- .article-card.featured .overlay{
-	width: 495px;
-	font-size: 26px;
-	line-height: 33px;
-	padding: 18px 50px 22px;
- }
-
-}
 
 @media screen and (min-width: 1024px){
 
-	.card-category .overlay{
-		width: 458px;
+	.card-category .title {
+	    font-size: 22px;
+	    line-height: 30px;
+	    min-height: 95px;
 	}
 
 	.card-category .category-label{
@@ -164,17 +187,29 @@
 	}
 	
 	.card-category .category-label > div{
-		margin-top: -17px;
+		margin-top: -15px;
 	}
 
+	.card-category.featured .overlay{
+		width: 458px;
 
-	.card-category .title {
-	    font-size: 26px;
-	    line-height: normal;
 	}
 	
-	.card-category.regular .title{
-		font-size: 24px;
+	.card-category.featured .title{
+		font-size: 26px;
+		line-height: normal;
+	} 
+
+}
+
+
+@media screen and (min-width: 1280px){
+
+	.card-category .category-label > div{
+		margin-top: -19px;
 	}
 
+	.card-category.featured .category-label > div{
+		margin-top: -28px;
+	}
 }

@@ -109,7 +109,7 @@ $(document).ready(function(){
 
 	renderPage();
 
-	// search related
+	// header related
 	var searchHeader = $(".header-search");
 	$(".search span").click(function(){
 		var $this = $(this); 
@@ -133,6 +133,8 @@ $(document).ready(function(){
 		}
 
 	});
+
+	// end of header related
 
 });
 

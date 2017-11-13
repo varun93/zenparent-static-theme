@@ -7,35 +7,60 @@ footer{
     font-size: 16px;
 }
 
-footer .social-links ul li,footer .info-links ul li{
+.social-links ul li,footer .info-links ul li{
 	list-style : none;
 	display: inline-block; 
 	margin-right: 30px;
 }
 
-footer .social-links ul li a,footer .info-links ul li a,footer .copyright{
+.social-links ul li a,footer .info-links ul li a,footer .copyright{
 	text-transform: uppercase;
 	color: #696969;
     font-weight: normal;
+    font-size: 14px;
     font-family: sans-serif;
 }
 
-footer div.social-links {
+.social-links {
     overflow: hidden;
 }
 
-footer div.info-links {
+.social-links li{
+	border: 1px solid #FF547C;
+	padding: 10px;
+}
+
+/*  Info Links */
+.info-links {
     margin-top: 10px;
 }
 
+.info-links li{
+	font-size: 14px;
+	line-height: 30px;
+}
+
 @media screen and (max-width: 600px){
+	
 	footer{
 		font-size: 12px;
 	}
+
 	footer ul{
 		padding: 0px;
 	}
-	footer .social-links ul li,footer .info-links ul li{
+
+	.social-links ul li,.info-links ul li{
 		margin-right: 20px;
 	}
+
+	.social-links li > a > img{
+		height: 24px;
+		width: 24px;
+	}
+
+	.social-links li{
+		padding: 8px;
+	}
+	
 }
