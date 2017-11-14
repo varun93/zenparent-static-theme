@@ -8,10 +8,10 @@
 
 ### How do I get started? ###
 
-* git clone
-* cd code
-* npm install
-* npm start
+1. git clone
+1. cd code
+1. npm install
+1. npm start
 
 The site is up and running on http://localhost:8000
 
