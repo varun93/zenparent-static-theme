@@ -16,4 +16,4 @@ The site is up and running on http://localhost:8000
 
 ### Requirements
 
-Node is required to build this project.
+**Node** is required to build this project.
